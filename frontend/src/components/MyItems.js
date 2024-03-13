@@ -158,7 +158,7 @@ const MyItems = ({ user }) => {
                         className={`item-card ${item.status ? 'sold' : ''}`}
                     >
                         <h3>
-              <span style={{color: item.status ? 'green' : 'black'}}>
+              <span style={{color: item.status ? 'green' : 'red'}}>
                 {item.itemName}
               </span>
                             {item.status && <FontAwesomeIcon icon={faCheck} className="sold-icon"/>}
