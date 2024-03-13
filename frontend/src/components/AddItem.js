@@ -20,11 +20,12 @@ const AddItem = () => {
         endTime: null, // Use null for initial value
     });
     const [user, setUser] = useState({});
-
+ console.log("dax")
     useEffect(() => {
         const token = sessionStorage.getItem('token');
         const [username, expirationTimestamp] = token.split('|');
         setUsername(username);
+
 
         setItemData((prevItemData) => ({
             ...prevItemData,
