@@ -1,0 +1,102 @@
+/* LoginPage.css */
+
+body {
+    background: url('E:/Archive123/frontend/public/default.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: floralwhite;
+
+}
+
+.sen {
+    margin-top: 20px;
+    color: #d9d9d9;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.option {
+    margin-right: 20px; /* Adjust as needed to provide space between buttons */
+}
+
+.b1,
+.b2 {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.b1 {
+    animation-delay: 0.5s; /* Delay for b1 */
+}
+
+.b2 {
+    animation-delay: 1s; /* Delay for b2 */
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Add box-shadow to the button */
+    transition: background-color 8000s;
+}
+
+button:hover {
+    background-color: #555;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Glow effect on hover */
+}
+
+span {
+    margin-left: 20px;
+}
