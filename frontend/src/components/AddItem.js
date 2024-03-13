@@ -20,7 +20,6 @@ const AddItem = () => {
         endTime: null, // Use null for initial value
     });
     const [user, setUser] = useState({});
- console.log("dax")
     useEffect(() => {
         const token = sessionStorage.getItem('token');
         const [username, expirationTimestamp] = token.split('|');
@@ -138,6 +137,7 @@ const AddItem = () => {
                         <button className="navbar-button" onClick={handleHistory}>
                             History
                         </button>
+
                         <button className="navbar-button" onClick={handleLogout}>
                             Logout
                         </button>
@@ -165,6 +165,7 @@ const AddItem = () => {
                             onChange={handleChange}
                         />
                     </div>
+
 
                     <div className="form-group">
                         <label htmlFor="startingPrice" style={{ display: 'block' }}>Starting Price:</label>

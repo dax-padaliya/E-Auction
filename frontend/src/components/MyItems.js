@@ -128,8 +128,9 @@ const MyItems = ({ user }) => {
     };
 
     return (
+
         <div className="item-list-container">
-            <nav className="navbar">
+            <nav className="navbar" style={{marginTop: '150px'}}>
                 <h2>Item List</h2>
                 <div className="navbar-actions">
                     <button className="navbar-button" onClick={() => navigate('/item')}>
@@ -150,17 +151,17 @@ const MyItems = ({ user }) => {
                 </div>
             </nav>
 
-            <div className="item-cards-container">
+            <div className="item-cards-container" style={{marginTop: '50px'}}>
                 {items.map((item) => (
                     <div
                         key={item.id}
                         className={`item-card ${item.status ? 'sold' : ''}`}
                     >
                         <h3>
-              <span style={{ color: item.status ? 'green' : 'black' }}>
+              <span style={{color: item.status ? 'green' : 'black'}}>
                 {item.itemName}
               </span>
-                            {item.status && <FontAwesomeIcon icon={faCheck} className="sold-icon" />}
+                            {item.status && <FontAwesomeIcon icon={faCheck} className="sold-icon"/>}
                         </h3>
                         <p>Description: {item.description}</p>
                         <p>Current Bid: ${item.currentBid.toFixed(2)}</p>
@@ -171,7 +172,7 @@ const MyItems = ({ user }) => {
                         </button>
 
                         {displayBids[item.id] && bid.itemId === item.id && bid.bids.length > 0 && (
-                            <BidTable bids={bid.bids} highlightedBidId={highestId} />
+                            <BidTable bids={bid.bids} highlightedBidId={highestId}/>
                         )}
 
                         {!item.status && (
@@ -183,6 +184,7 @@ const MyItems = ({ user }) => {
                 ))}
             </div>
         </div>
+
     );
 };
 
