@@ -41,13 +41,9 @@ const Login = () => {
                 sessionStorage.setItem('token', token);
                 const [username, expirationTimestamp] = token.split('|');
 
-                console.log('Username :', username);
+                console.log('Username:', username);
                 navigate("/item");
             }
-            else{
-                window.alert("Incorrect Username Or Password");
-            }
-
         } catch (error) {
             console.error('Error during login:', error.message);
         }

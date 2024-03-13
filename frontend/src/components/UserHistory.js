@@ -130,7 +130,7 @@ function UserHistory() {
 
     return (
         <div>
-            <nav className="navbar">
+            <nav className="navbar" style={{marginTop: '-10px'}}>
                 <h2>Item List</h2>
                 <div className="navbar-actions">
                     <button className="navbar-button" onClick={() => navigate('/item')}>
@@ -153,7 +153,7 @@ function UserHistory() {
             <div className="user-history-container">
 
 
-                <h1>History</h1>
+            <h1>History</h1>
                 <table className="history-table">
                     <thead>
                     <tr>

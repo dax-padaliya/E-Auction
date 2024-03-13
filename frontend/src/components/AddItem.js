@@ -122,7 +122,7 @@ const AddItem = () => {
     return (
         <div className="box">
             <div className="add-item-container">
-                <nav className="navbar">
+                <nav className="navbar" style={{marginTop: '150px'}}>
                     <h2>Item List</h2>
                     <div className="navbar-actions">
                         <button className="navbar-button" onClick={() => navigate('/item')}>
@@ -146,7 +146,7 @@ const AddItem = () => {
                 <h2>Add Item</h2>
                 <form>
                     <div className="form-group">
-                        <label htmlFor="itemName" style={{ display: 'block' }}>Item Name:</label>
+                        <label htmlFor="itemName" style={{display: 'block'}}>Item Name:</label>
                         <input
                             type="text"
                             id="itemName"
@@ -157,7 +157,7 @@ const AddItem = () => {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="description" style={{ display: 'block' }}>Description:</label>
+                        <label htmlFor="description" style={{display: 'block'}}>Description:</label>
                         <textarea
                             id="description"
                             name="description"
@@ -168,7 +168,7 @@ const AddItem = () => {
 
 
                     <div className="form-group">
-                        <label htmlFor="startingPrice" style={{ display: 'block' }}>Starting Price:</label>
+                        <label htmlFor="startingPrice" style={{display: 'block'}}>Starting Price:</label>
                         <input
                             type="text"
                             id="startingPrice"
@@ -179,7 +179,7 @@ const AddItem = () => {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="endTime" style={{ display: 'block' }}>End Time:</label>
+                        <label htmlFor="endTime" style={{display: 'block'}}>End Time:</label>
                         <DatePicker
                             selected={itemData.endTime}
                             onChange={handleEndTimeChange}

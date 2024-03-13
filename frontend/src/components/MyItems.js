@@ -130,7 +130,7 @@ const MyItems = ({ user }) => {
     return (
 
         <div className="item-list-container">
-            <nav className="navbar" style={{marginTop: '150px'}}>
+            <nav className="navbar" style={{marginTop: '170px'}}>
                 <h2>Item List</h2>
                 <div className="navbar-actions">
                     <button className="navbar-button" onClick={() => navigate('/item')}>

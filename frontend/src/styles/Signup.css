@@ -12,17 +12,34 @@ body {
 }
 
 .signup-container {
-    background: #fff;
+    color: floralwhite;
+    background: rgba(255, 255, 255, 0.05); /* Adjust the alpha value (0 to 1) for transparency */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
+    backdrop-filter: blur(10px); /* Add blur effect if needed */
+
+    animation: fadeInUp 1s ease-out; /* Apply fadeInUp animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    animation: fadeInUp 1s; /* Apply fadeInUp animation with delay */
+    /*opacity: 1; !* Ensure that the opacity is set to 1 after the animation *!*/
 }
 
 form {
@@ -30,29 +47,20 @@ form {
     flex-direction: column;
 }
 
-label {
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-input {
+label, input, button {
     padding: 10px;
     margin-bottom: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
     outline: none;
 }
 
 button {
-    background-color: #3498db;
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #ffffff;
 }
