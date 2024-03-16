@@ -133,6 +133,7 @@ const MyItems = ({ user }) => {
             <nav className="navbar" style={{marginTop: '170px'}}>
                 <h2>Item List</h2>
                 <div className="navbar-actions">
+
                     <button className="navbar-button" onClick={() => navigate('/item')}>
                         Home
                     </button>

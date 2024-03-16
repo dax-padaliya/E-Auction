@@ -112,6 +112,7 @@ function UserHistory() {
 
     const handleLogout = () => {
 
+
         const token = sessionStorage.getItem('token');
 
         if(token)
