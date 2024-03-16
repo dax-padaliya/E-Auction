@@ -45,9 +45,9 @@
 button {
     padding: 10px 15px;
     cursor: pointer;
-    border: 2px solid #060017;
+    border: 2px solid #00090c;
     border-radius: 5px;
-    color: #ffffff;
+    color: #fff9f9;
     background-color: transparent;
     transition: background-color 0.3s;
 }
