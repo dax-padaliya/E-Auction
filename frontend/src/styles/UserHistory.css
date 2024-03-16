@@ -11,6 +11,7 @@ h1{
 }
 
 .history-table th, .history-table td {
+
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
